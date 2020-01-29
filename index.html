@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="CalculatorOnJS.js"></script>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div class="mainBox">
+            <div>
+                <input id="result" class="result">
+            </div>
+            <div>
+                <input class="buttons" style="width: 209px;" type="button" value="AC" onclick="allClear()">
+                <input class="buttons" type="button" value="Back" onclick="removePrevious()">
+                <input class="buttons" type="button" value="/" onclick="getOperator('/')">
+            </div>
+            <div>
+                <input class="buttons" type="button" value="7" onclick="appendNumber(7)">
+                <input class="buttons" type="button" value="8" onclick="appendNumber(8)">
+                <input class="buttons" type="button" value="9" onclick="appendNumber(9)">
+                <input class="buttons" type="button" value="x" onclick="getOperator('*')">
+            </div>
+            <div>
+                <input class="buttons" type="button" value="4" onclick="appendNumber(4)">
+                <input class="buttons" type="button" value="5" onclick="appendNumber(5)">
+                <input class="buttons" type="button" value="6" onclick="appendNumber(6)">
+                <input class="buttons" type="button" value="-" onclick="getOperator('-')">
+            </div>
+            <div>
+                <input class="buttons" type="button" value="1" onclick="appendNumber(1)">
+                <input class="buttons" type="button" value="2" onclick="appendNumber(2)">
+                <input class="buttons" type="button" value="3" onclick="appendNumber(3)">
+                <input class="buttons" type="button" value="+" onclick="getOperator('+')">
+            </div>
+            <div>
+                <input class="buttons" style="width: 209px;" type="button" value="0" onclick="appendNumber(0)">
+                <input class="buttons" type="button" value="." onclick="appendNumber('.')">
+                <input class="buttons" type="button" value="=" onclick="compute()">
+            </div>
+        </div>
+    </body>
+</html>

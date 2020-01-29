@@ -1,0 +1,14 @@
+.buttons{
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    font-size: 25px;
+}
+
+.result{
+    width: 420px;
+    height: 100px;
+    margin: 3px;
+    font-size: 50px;
+    text-align: right;
+}
