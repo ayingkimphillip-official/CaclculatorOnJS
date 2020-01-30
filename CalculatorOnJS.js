@@ -36,14 +36,14 @@ function getOperator(operator) {
 
     if (result.value.toString().endsWith('+') || result.value.toString().endsWith('-') || result.value.toString().endsWith('*') || result.value.toString().endsWith('/')) {
         result.value = result.value.substring(0, result.value.length - 1);
-        result.value = result.value + operator;
-        this.operation = operator;
+        result.value = result.value + operator.toString();
+        this.operation = operator.toString();
     }
     else {
-        result.value = result.value + operator;
+        result.value = result.value + operator.toString();
         this.previousNumber = this.currentNumber;
         this.currentNumber = '';
-        this.operation = operator;
+        this.operation = operator.toString();
     }
 }
 
